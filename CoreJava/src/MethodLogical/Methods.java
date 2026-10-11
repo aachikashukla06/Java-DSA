@@ -1,9 +1,10 @@
 package MethodLogical;
 
 
+
 public class Methods 
 {
-	//QUESTION 1//
+	  //QUESTION 1//
 	static int speed(int distance, int time)
 	{
 		return distance/time;
@@ -94,6 +95,37 @@ public class Methods
 	{
 		return (a1+a2)/2;
 	}
+	//Question 18//
+	static int force(int mass, int acceleration )
+	{
+		return mass*acceleration;
+	}
+	//Question 19//
+	static int simpleInterest(int principal, int rate, int time)
+	{
+		return (principal*rate*time)/100;
+	}
+	//Question 20//
+	static int density(int mass, int volume)
+	{
+		return mass/volume;
+	}
+	//Question 21//
+	static int workDone(int force, int distance)
+	{
+		return force*distance;
+	}
+
+	//Question 22//
+    static int pressure(int force , int area)
+    {
+    	return force/area;
+    }
+	
+
+	
+	
+	
 	
 	
 	
@@ -176,7 +208,24 @@ public class Methods
 		System.out.println(average(56, 84));
 		
 		System.out.println("Question 18");
+		force(50, 3);
+		System.out.println(force(50, 3));
 		
+		System.out.println("Question 19");
+		simpleInterest(5000, 10, 2);
+		System.out.println(simpleInterest(5000, 10, 2));
+		
+		System.out.println("Question 20");
+		density(200, 50);
+		System.out.println(density(200, 50));
+		
+		System.out.println("Question 21");
+		workDone(40, 5);
+		System.out.println(workDone(40, 5));
+		
+		System.out.println("Question 22");
+		pressure(200, 20);
+		System.out.println(pressure(200, 20));
 		
 	}
 
