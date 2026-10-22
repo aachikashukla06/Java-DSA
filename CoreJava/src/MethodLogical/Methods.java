@@ -116,13 +116,7 @@ public class Methods
 		return force*distance;
 	}
 
-	//Question 22//
-    static int pressure(int force , int area)
-    {
-    	return force/area;
-    }
 	
-
 	
 	
 	
@@ -223,9 +217,7 @@ public class Methods
 		workDone(40, 5);
 		System.out.println(workDone(40, 5));
 		
-		System.out.println("Question 22");
-		pressure(200, 20);
-		System.out.println(pressure(200, 20));
+		
 		
 	}
 
