@@ -1,5 +1,6 @@
 package ConditionalStatements;
 
+
 public class Main 
 {
 	
@@ -156,6 +157,149 @@ public class Main
 		}
 	}
 	
+	//Question 11//
+	static String printWeekday(int day)
+	{
+		if(day==1)
+		{
+			return "Monday";
+		}
+		else if(day==2)
+		{
+			return "Tuesday";
+		}
+		else if(day==3)
+		{
+			return "Wednesday";
+		}
+		else if(day==4)
+		{
+			return "Thursday";
+		}
+		else if(day==5)
+		{
+			return "Friday";
+		}
+		else if(day==6)
+		{
+			return "Saturday";
+		}
+		else {
+			return "Sunday";
+		}
+	}
+	//Question 12//
+	static String printMonthName(int month)
+	{
+		if (month == 1) 
+		{
+	        return "January";
+	    }
+		else if (month == 2) 
+		{
+	        return "February";
+	    } 
+		else if (month == 3)
+		{
+	        return "March";
+	    } 
+		else if (month == 4)
+	    {
+	        return "April";
+	    } 
+		else if (month == 5) 
+		{
+	        return "May";
+	    }
+		else if (month == 6) 
+		{
+	        return "June";
+	    } 
+		else if (month == 7) 
+		{
+	        return "July";
+	    }
+		else if (month == 8)
+		{
+	        return "August";
+	    } 
+		else if (month == 9) 
+		{
+	        return "September";
+	    } 
+		else if (month == 10)
+		{
+	        return "October";
+	    } 
+		else if (month == 11) 
+		{
+	        return "November";
+	    } 
+		else if (month == 12) 
+		{
+	        return "December";
+	    } 
+		else
+		{
+	        return "Invalid month";
+	    }
+	}
+	//Question 13//
+	static int calculateTotalAmount(int notesOf100, int notesOf500, int notesOf2000)
+	{
+		int totalAmount = (notesOf100 * 100)+(notesOf500 * 500 )+(notesOf2000 * 2000);
+		
+		if(totalAmount>10000)
+		{
+			System.out.println("Amount exceeds 10000");
+		}
+		else {
+			System.out.println("Amount is within limit");
+		}
+		return totalAmount;
+		
+	}
+	//Question 14//
+	static double calculateTotalExpenses(int quantity , int pricePerItem)
+	{
+		double totalAmount = quantity*pricePerItem;
+		
+		if(quantity>100)
+		{
+			totalAmount= totalAmount-(totalAmount*10/100);
+		}
+		return totalAmount;
+		
+		
+	}
+	//Question 15//
+	static boolean isValidTriangle(int angle1, int angle2, int angle3)
+	{
+		if(angle1+angle2+angle3 ==180)
+		{
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -248,6 +392,36 @@ public class Main
 		 calculateProfitOrLoss(500, 600);
 		 calculateProfitOrLoss(700, 500);
 		 calculateProfitOrLoss(800, 800);
+		 
+		 //Question 11//
+		 System.out.println();
+		 System.out.println("Question 11");
+		 printWeekday(2);
+		 System.out.println(printWeekday(2));
+		 
+		 //Question 12//
+		 System.out.println();
+		 System.out.println("Question 12");
+		 printMonthName(10);
+		 System.out.println(printMonthName(10));
+		 
+		 //Question 13//
+		 System.out.println();
+		 System.out.println("Question 13");
+		 System.out.println("Total Amount:"+calculateTotalAmount(5, 8, 2));
+		 
+		 //Question 14//
+		 System.out.println();
+		 System.out.println("Question 14");
+		 System.out.println(calculateTotalExpenses(150, 20));
+		 
+		 //Question 15//
+		 System.out.println();
+		 System.out.println("Question 15");
+		 System.out.println(isValidTriangle(60, 60, 60) + " it is a valid triangle");
+		 System.out.println(isValidTriangle(90, 75, 45));
+		 
+		 
 		 
 	}
 
