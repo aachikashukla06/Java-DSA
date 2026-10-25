@@ -283,6 +283,47 @@ public class Main
 			return false;
 		}
 	}
+	//Question 16//
+	static boolean isValidTriangleSides(int a, int b, int c)
+	{
+		if(a+b>c && a+c>b && b+c>a)
+		{
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	//Question 17//
+	static String checkTriangleType(int a , int b , int c)
+	{
+		if(a==b && b==c)
+		{
+			return "Equilateral Triangle";
+		}
+		else if(a==b || b==c || a==c)
+		{
+			return "Isosceles Triangle";
+		}
+		else {
+			return "Scalene Triangle";
+		}
+			
+	}
+	//Question 18//
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -420,6 +461,25 @@ public class Main
 		 System.out.println("Question 15");
 		 System.out.println(isValidTriangle(60, 60, 60) + " it is a valid triangle");
 		 System.out.println(isValidTriangle(90, 75, 45));
+		 
+		 //Question 16//
+		 System.out.println();
+		 System.out.println("Question 16");
+		 System.out.println(isValidTriangleSides(3, 4, 5));
+		 
+		 //Question 17//
+		 System.out.println();
+		 System.out.println("Question 17");
+	     System.out.println(checkTriangleType(5, 5, 5));
+	     System.out.println(checkTriangleType(6, 6, 8));
+	     System.out.println(checkTriangleType(7, 8, 9));
+
+		 
+		 
+		 
+		 
+		 
+		 
 		 
 		 
 		 
